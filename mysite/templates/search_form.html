@@ -5,7 +5,10 @@
 
     </head>
     <body>
-        <form action ="/search/" method="GET">
+        {% if error %}
+            <p style="color: red;">Please submit a search term.</p>
+        {% endif %}
+        <form action ="" method="GET">
         <input type"text" name ="q">
         <input type="submit" value = "Search">
         </form>
